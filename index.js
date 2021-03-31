@@ -21,6 +21,11 @@ async function run() {
     GIT_SRC_REPOS : (config.GIT_SRC_REPOS || '').replace(/,$/, '').split(','),
     APP_VERSION : config.APP_VERSION || '',
     UCD_LIB_INITIATOR : process.env._UCD_LIB_INITIATOR || '',
+    GITHUB_EVENT : process.env._GITHUB_EVENT || '',
+    GITHUB_ISSUE_NUMBER : process.env._GITHUB_ISSUE_NUMBER || '',
+    GITHUB_REPOSITORY : process.env._GITHUB_REPOSITORY || '',
+    GITHUB_PR_USER : process.env._GITHUB_PR_USER || '',
+    GITHUB_PR_MERGED_BY : process.env._GITHUB_PR_MERGED_BY || '',
     BRANCH_NAME : process.env.BRANCH_NAME || '',
     REPO_NAME : process.env.REPO_NAME || '',
   }
